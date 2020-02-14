@@ -1,0 +1,94 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Drawing;
+using System.Data;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Threading;
+
+namespace SpaceFightServer
+{
+    public partial class MapsControl : UserControl
+    {
+        public MapsControl()
+        {
+            InitializeComponent();
+        }
+
+        Thread displayThread;
+        Graphics mapGraphics;
+        Graphics formGraphics;
+        Bitmap mapBitMap;
+
+        bool drawing = true;
+
+
+        private void MapsControl_Load(object sender, EventArgs e)
+        {
+            mapBitMap = new Bitmap(500, 500);
+            mapGraphics = Graphics.FromImage(mapBitMap);
+            formGraphics = CreateGraphics();
+            displayThread = new Thread(Draw);
+            displayThread.IsBackground = true;
+            displayThread.Start();
+        }
+
+        private void Draw()
+        {
+            float angle = 0.0f;
+            PointF org = new PointF(250, 250);
+            float rad =250f;
+            Pen pen = new Pen(Brushes.Azure, 3f);
+            RectangleF area = new Rectangle(30, 30, 500, 500);
+            RectangleF circle = new Rectangle(0, 0, 50, 50);
+
+            PointF loc = Point.Empty;
+            PointF img = new PointF(20, 20);
+
+            formGraphics.Clear(Color.Transparent);
+
+            while (drawing)
+            {
+                mapGraphics.Clear(Color.Black);
+
+                mapGraphics.DrawEllipse(pen, area);
+                loc = CirclePoint(rad, angle, org);
+
+                circle.X = loc.X - (circle.Width / 2) + area.X;
+                circle.Y = loc.Y - (circle.Width / 2) + area.Y;
+
+                mapGraphics.DrawEllipse(pen, circle);
+                formGraphics.DrawImage(mapBitMap, img);
+
+                if (angle < 360)
+                {
+                    angle += 0.5f;
+                }
+                else
+                {
+                    angle = 0;
+                }
+
+            }
+
+        }
+
+        private PointF CirclePoint(float rad, float angle, PointF org)
+        {
+            float x = (float)(rad * Math.Cos(angle * Math.PI / 180f) + org.X);
+            float y = (float)(rad * Math.Sin(angle * Math.PI / 180f) + org.Y);
+
+            return new PointF(x, y);
+
+        }
+
+        private void map1But_Click(object sender, EventArgs e)
+        {
+
+        }
+
+    }
+}

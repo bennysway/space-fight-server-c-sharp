@@ -1,0 +1,5 @@
+This is the log file of the 2018-3-31
+MySQL State: Open
+Setting up server...
+Server is running.
+

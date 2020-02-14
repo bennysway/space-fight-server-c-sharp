@@ -1,0 +1,8 @@
+C:\Users\Public\Documents\Unity Projects\Stickman64\Space Fight\SpaceFightServer\SpaceFightServer\SpaceFightDLLs\SwayBuffer\SwayBuffer\bin\Debug\netstandard1.6\SwayBuffer.deps.json
+C:\Users\Public\Documents\Unity Projects\Stickman64\Space Fight\SpaceFightServer\SpaceFightServer\SpaceFightDLLs\SwayBuffer\SwayBuffer\bin\Debug\netstandard1.6\SwayBuffer.dll
+C:\Users\Public\Documents\Unity Projects\Stickman64\Space Fight\SpaceFightServer\SpaceFightServer\SpaceFightDLLs\SwayBuffer\SwayBuffer\bin\Debug\netstandard1.6\SwayBuffer.pdb
+C:\Users\Public\Documents\Unity Projects\Stickman64\Space Fight\SpaceFightServer\SpaceFightServer\SpaceFightDLLs\SwayBuffer\SwayBuffer\obj\Debug\netstandard1.6\SwayBuffer.csprojResolveAssemblyReference.cache
+C:\Users\Public\Documents\Unity Projects\Stickman64\Space Fight\SpaceFightServer\SpaceFightServer\SpaceFightDLLs\SwayBuffer\SwayBuffer\obj\Debug\netstandard1.6\SwayBuffer.csproj.CoreCompileInputs.cache
+C:\Users\Public\Documents\Unity Projects\Stickman64\Space Fight\SpaceFightServer\SpaceFightServer\SpaceFightDLLs\SwayBuffer\SwayBuffer\obj\Debug\netstandard1.6\SwayBuffer.AssemblyInfo.cs
+C:\Users\Public\Documents\Unity Projects\Stickman64\Space Fight\SpaceFightServer\SpaceFightServer\SpaceFightDLLs\SwayBuffer\SwayBuffer\obj\Debug\netstandard1.6\SwayBuffer.dll
+C:\Users\Public\Documents\Unity Projects\Stickman64\Space Fight\SpaceFightServer\SpaceFightServer\SpaceFightDLLs\SwayBuffer\SwayBuffer\obj\Debug\netstandard1.6\SwayBuffer.pdb
